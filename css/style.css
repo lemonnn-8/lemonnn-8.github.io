@@ -873,7 +873,7 @@ body:after {
 
 /* Hero Section */
 .hero-section {
-  min-height: 100vh;
+  min-height: 90vh;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   position: relative;
   overflow: hidden;
@@ -1078,7 +1078,7 @@ body:after {
 
 /* About Section */
 .about-section {
-  padding: 100px 0;
+  padding: 70px 0;
   background: #f8f9fa;
 }
 
@@ -1226,7 +1226,7 @@ body:after {
 
 /* Experience Section */
 .experience-section {
-  padding: 100px 0;
+  padding: 70px 0;
   background: white;
 }
 
@@ -1322,7 +1322,7 @@ body:after {
 
 /* Skills Section */
 .skills-section {
-  padding: 100px 0;
+  padding: 70px 0;
   background: #f8f9fa;
 }
 
@@ -1417,7 +1417,7 @@ body:after {
 
 /* Projects Section */
 .projects-section {
-  padding: 100px 0;
+  padding: 70px 0;
   background: white;
 }
 
@@ -1437,7 +1437,7 @@ body:after {
 
 .project-image {
   position: relative;
-  height: 200px;
+  height: 170px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   display: flex;
   align-items: center;
@@ -1525,7 +1525,7 @@ body:after {
 
 /* Contact Section */
 .contact-section {
-  padding: 100px 0;
+  padding: 70px 0;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
 }
@@ -1621,6 +1621,7 @@ body:after {
 .social-icons {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .social-icon {
@@ -1641,6 +1642,21 @@ body:after {
   transform: translateY(-3px);
 }
 
+/* Icon overlap fixes & normalization */
+/* Normalize icon font sizes from icomoon to prevent overflow */
+.social-icon span:before,
+.contact-icon span:before,
+.profile-contact .contact-item span:before {
+  font-size: 22px !important;
+  line-height: 1;
+}
+
+/* Ensure glyphs center nicely in circular containers */
+.social-icon,
+.contact-icon {
+  line-height: 0;
+}
+
 /* Footer */
 .site-footer {
   background: #1a1a1a;
@@ -1656,7 +1672,7 @@ body:after {
 
 /* Testimonials Section */
 .testimonials-section {
-  padding: 100px 0;
+  padding: 70px 0;
   background: white;
 }
 
@@ -1669,7 +1685,7 @@ body:after {
 .testimonial-card {
   background: #f8f9fa;
   border-radius: 20px;
-  padding: 3rem;
+  padding: 2.2rem;
   text-align: center;
   position: relative;
   border: 1px solid #e9ecef;
@@ -1729,7 +1745,7 @@ body:after {
 
 /* Services Section */
 .services-section {
-  padding: 100px 0;
+  padding: 70px 0;
   background: #f8f9fa;
 }
 
@@ -1741,7 +1757,7 @@ body:after {
 
 .service-card {
   background: white;
-  padding: 2.5rem;
+  padding: 2rem;
   border-radius: 16px;
   text-align: center;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
@@ -1817,6 +1833,7 @@ body:after {
   .hero-title {
     font-size: 2.5rem;
   }
+  .hero-section { min-height: 80vh; }
   
   .hero-stats {
     justify-content: center;
@@ -1865,6 +1882,16 @@ body:after {
     width: 100%;
     margin-right: 0;
     margin-bottom: 1rem;
+  }
+  /* Reduce vertical spacing on mobile */
+  .about-section,
+  .experience-section,
+  .skills-section,
+  .projects-section,
+  .testimonials-section,
+  .services-section,
+  .contact-section {
+    padding: 50px 0;
   }
 }
 
