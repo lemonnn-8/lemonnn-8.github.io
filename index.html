@@ -49,8 +49,9 @@
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                 <li><a href="#services-section" class="nav-link">Services</a></li>
-                <li><a href="#about-section" class="nav-link">About Me</a></li>
-                
+                <li><a href="#experience-section" class="nav-link">Experience</a></li>
+                <li><a href="#about-section" class="nav-link">About</a></li>
+                <li><a href="#projects-section" class="nav-link">Projects</a></li>
               </ul>
             </nav>
           </div>
@@ -63,8 +64,9 @@
 
             <nav class="site-navigation position-relative" role="navigation">
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li><a href="#technologies-section" class="nav-link">Skills</a></li>
                 <li><a href="#testimonials-section" class="nav-link">Testimonials</a></li>
-                <li><a href="#clients-section" class="nav-link">Projects/Clients</a></li>
+                <li><a href="#contact-section" class="nav-link">Contact</a></li>
               </ul>
             </nav>
 
@@ -86,11 +88,40 @@
 
           <div class="col-md-12 mt-lg-5 text-left align-self-center text-intro">
             <div class="row">
-              <div class="col-lg-6">
-                <h1 class="text-black">Namaste, I'm Anand</h1>
-                <p class="lead">I create software for living</p>
-                <p><a href="https://drive.google.com/file/d/1uCIC468iO3yMiqsrD_OggAoD7CE2VT4A/view?usp=sharing" target="_blank" class="btn smoothscroll btn-primary">Resume</a>
-                  <a href="mailto:pani.anand90@gmail.com?Subject=Hello%20there" target="_top" class="btn smoothscroll btn-primary">Hire me</a></p>
+              <div class="col-lg-8">
+                <div class="hero-content">
+                  <h1 class="text-black hero-title">Namaste, I'm <span class="highlight">Anand Kumar Panigrahi</span></h1>
+                  <h2 class="hero-subtitle">Backend Engineer & API Specialist</h2>
+                  <p class="lead hero-description">5+ years of experience crafting robust APIs, microservices, and scalable backend solutions. I transform complex business requirements into elegant technical solutions that drive real-world impact.</p>
+                  
+                  <div class="hero-stats">
+                    <div class="stat-item">
+                      <span class="stat-number">5+</span>
+                      <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                      <span class="stat-number">10K+</span>
+                      <span class="stat-label">Concurrent Users</span>
+                    </div>
+                    <div class="stat-item">
+                      <span class="stat-number">20M+</span>
+                      <span class="stat-label">Requests Handled</span>
+                    </div>
+                  </div>
+
+                  <div class="hero-actions">
+                    <a href="#contact-section" class="btn btn-primary btn-lg smoothscroll">Let's Work Together</a>
+                    <a href="#projects-section" class="btn btn-outline-primary btn-lg smoothscroll">View My Work</a>
+                  </div>
+
+                  <div class="hero-contact">
+                    <p class="contact-info">
+                      <i class="icon-location_on"></i> New Delhi, India &nbsp;&nbsp;
+                      <i class="icon-phone"></i> +91 9560632752 &nbsp;&nbsp;
+                      <i class="icon-mail_outline"></i> anand.fmwork@gmail.com
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -98,7 +129,24 @@
         </div>
       </div>
 
-      <img src="images/img_bg_12.jpg" alt="Image" class="img-face" data-aos="fade">
+      <div class="hero-visual">
+        <div class="code-window">
+          <div class="window-header">
+            <div class="window-controls">
+              <span class="control red"></span>
+              <span class="control yellow"></span>
+              <span class="control green"></span>
+            </div>
+            <div class="window-title">backend-service.go</div>
+          </div>
+          <div class="code-content">
+            <div class="code-line"><span class="keyword">func</span> <span class="function">main</span>() {</div>
+            <div class="code-line">    <span class="variable">server</span> := <span class="function">NewServer</span>()</div>
+            <div class="code-line">    <span class="variable">server</span>.<span class="function">Start</span>(<span class="string">":8080"</span>)</div>
+            <div class="code-line">}</div>
+          </div>
+        </div>
+      </div>
 
       
     </div>  
@@ -110,46 +158,66 @@
       <div class="container">
         <div class="row ">
           <div class="col-12 mb-5 position-relative">
-            <!-- <h2 class="section-title text-center mb-5">My Services</h2> -->
-            <h2 class="section-title">Services Offered</h2>
+            <h2 class="section-title text-center">What I Do</h2>
+            <p class="section-subtitle text-center">Backend Engineering & API Development Services</p>
           </div>
           
-          <div class="col-md-6 mb-4">
+          <div class="col-md-6 col-lg-4 mb-4">
             <div class="service d-flex h-100">
-              <div class="service-number mr-4"><span class="icon-style"></span></div>
+              <div class="service-number mr-4"><span class="icon-code"></span></div>
               <div class="service-about">
-                <h3>Software Solutions</h3>
-                <p>To deliver innovative software solutions tailored to organizational needs by understanding pain points and developing efficient, effective solutions.</p>
+                <h3>API Development</h3>
+                <p>Design and build robust RESTful APIs and GraphQL endpoints using Go, Node.js, and NestJS. Focus on performance, scalability, and developer experience.</p>
               </div>
             </div>
           </div>
 
-          <div class="col-md-6 mb-4">
+          <div class="col-md-6 col-lg-4 mb-4">
             <div class="service d-flex h-100">
-              <div class="service-number mr-4"><span class="icon-business_center"></span></div>
+              <div class="service-number mr-4"><span class="icon-cloud"></span></div>
               <div class="service-about">
-                <h3>Web Development</h3>
-                <p>Focuses on building dynamic and responsive websites. Ensures optimal functionality and performance.</p>
+                <h3>Microservices Architecture</h3>
+                <p>Design and implement microservices solutions with proper service communication, data consistency, and deployment strategies using Docker and Kubernetes.</p>
               </div>
             </div>
           </div>
 
-          <div class="col-md-6 mb-4">
+          <div class="col-md-6 col-lg-4 mb-4">
             <div class="service d-flex h-100">
-              <div class="service-number mr-4"><span class="icon-desktop_windows"></span></div>
+              <div class="service-number mr-4"><span class="icon-storage"></span></div>
               <div class="service-about">
-                <h3>App Development</h3>
-                <p>I specialize in creating applications for both iOS and Android platforms, ensuring a seamless user experience across devices.</p>
+                <h3>Database Design & Optimization</h3>
+                <p>Expert in PostgreSQL, Redis, and database optimization. Design efficient schemas and implement caching strategies for high-performance applications.</p>
               </div>
             </div>
           </div>
 
-          <div class="col-md-6 mb-4">
+          <div class="col-md-6 col-lg-4 mb-4">
             <div class="service d-flex h-100">
-              <div class="service-number mr-4"><span class="icon-layers"></span></div>
+              <div class="service-number mr-4"><span class="icon-cloud_queue"></span></div>
               <div class="service-about">
-                <h3>Web Design</h3>
-                <p>Designs visually appealing and accessible websites. Prioritizes aesthetics while ensuring usability.</p>
+                <h3>Cloud Infrastructure</h3>
+                <p>Deploy and manage applications on AWS and Google Cloud. Implement CI/CD pipelines, monitoring, and auto-scaling solutions for production environments.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="service d-flex h-100">
+              <div class="service-number mr-4"><span class="icon-speed"></span></div>
+              <div class="service-about">
+                <h3>Performance Optimization</h3>
+                <p>Optimize backend performance through code refactoring, caching strategies, and database tuning. Proven track record of reducing response times by 50%+.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="service d-flex h-100">
+              <div class="service-number mr-4"><span class="icon-architecture"></span></div>
+              <div class="service-about">
+                <h3>System Architecture</h3>
+                <p>Design scalable system architectures that handle millions of requests. Experience with load balancing, horizontal scaling, and fault tolerance.</p>
               </div>
             </div>
           </div>
@@ -158,12 +226,106 @@
       </div>
     </div>
 
+    <div class="site-section bg-light" id="experience-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mb-5 position-relative">
+            <h2 class="section-title text-center">Professional Experience</h2>
+            <p class="section-subtitle text-center">Building scalable backend solutions for diverse industries</p>
+          </div>
+        </div>
+        
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Software Engineer</h3>
+                <span class="company">DeepUp GmbH</span>
+                <span class="duration">Nov 2024 – Present</span>
+              </div>
+              <div class="timeline-body">
+                <ul>
+                  <li>Building backend services in Go, migrating existing Kotlin services for improved performance and maintainability</li>
+                  <li>Managing Kubernetes deployments with canary strategies to ensure safe and incremental rollouts</li>
+                  <li>Collaborating with customers and product teams to design and deliver solutions using TDD, from concept to production</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Senior Software Engineer</h3>
+                <span class="company">Scaletech Solutions</span>
+                <span class="duration">Sept 2020 – Nov 2024</span>
+              </div>
+              <div class="timeline-body">
+                <h4>Key Achievements:</h4>
+                <ul>
+                  <li><strong>Soccer Platform (Next Edge Sports):</strong> Spearheaded development using NestJS and PostgreSQL, initially as sole developer, later leading a team of 2</li>
+                  <li><strong>mysanta.ai (Oxolo):</strong> Pioneered backend development handling 10,000+ concurrent users during Christmas peak using Node.js, PostgreSQL, and Google Sheets integration</li>
+                  <li><strong>ELF Football League:</strong> Led team of 3 developers building roster management system with zero downtime during 12-week season</li>
+                  <li><strong>Authorizer Open Source:</strong> Transitioned to Go, created single-click deployment, pivoted from Kubernetes to Railway for cost-effective beta</li>
+                  <li><strong>Simprosys Migration:</strong> Migrated PHP solution to handle 20M Shopify requests in Golang, reducing per-request time from 1500ms to 800ms</li>
+                  <li><strong>Alignmt AI:</strong> Created compliance automation product for Healthcare AI using Golang backend</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Senior Consultant</h3>
+                <span class="company">Greymeter Pvt. Ltd.</span>
+                <span class="duration">Mar 2022 – May 2023</span>
+              </div>
+              <div class="timeline-body">
+                <ul>
+                  <li>Engineered cutting-edge compliance automation tool for manufacturing firms using NestJS and PostgreSQL</li>
+                  <li>Implemented frequency-based compliance triggering and user assignment system</li>
+                  <li>Single-handedly responsible for design and development, collaborating with stakeholders for requirement alignment</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="site-section" id="about-section">
       <div class="container">
         <div class="row ">
           <div class="col-12">
-            <h2 class="section-title">About Me</h2>
-            <p>I'm a Software Engineer passionate about creating innovative solutions to real-world problems. My journey began in web development and evolved into designing complex systems. With a focus on machine learning, big data, and software engineering, I thrive on tackling new challenges and delivering impactful, high-quality products. Outside of work, I have diverse interests, including gaming, football, history, and hands-on projects such as car restoration and culinary experimentation. I am committed to continuous learning, whether exploring emerging technologies, historical knowledge, or refining my skills in various hobbies.</p>
+            <h2 class="section-title text-center">About Me</h2>
+            <div class="about-content">
+              <p class="lead">I'm a seasoned Backend Engineer with 5+ years of experience crafting robust APIs and microservices that power modern applications. My journey in software development has been driven by a passion for solving complex technical challenges and building systems that scale.</p>
+              
+              <p>Throughout my career, I've specialized in backend development, working with technologies like Go, Node.js, NestJS, PostgreSQL, and Redis. I've had the privilege of working on diverse projects - from handling 10,000+ concurrent users during peak traffic to migrating legacy systems that process 20M+ requests, always focusing on performance optimization and system reliability.</p>
+              
+              <p>What sets me apart is my ability to translate complex business requirements into elegant technical solutions. Whether it's designing microservices architectures, implementing caching strategies, or optimizing database queries, I approach every challenge with a focus on scalability, maintainability, and performance.</p>
+              
+              <div class="about-highlights">
+                <div class="highlight-item">
+                  <h4>Technical Leadership</h4>
+                  <p>Led teams of 2-3 developers, mentoring junior engineers and establishing best practices for code quality and system architecture.</p>
+                </div>
+                <div class="highlight-item">
+                  <h4>Performance Focus</h4>
+                  <p>Consistently delivered performance improvements, including reducing API response times by 50%+ and achieving zero downtime during critical periods.</p>
+                </div>
+                <div class="highlight-item">
+                  <h4>Open Source Contribution</h4>
+                  <p>Active contributor to open-source projects, including Authorizer, demonstrating commitment to the developer community and continuous learning.</p>
+                </div>
+              </div>
+              
+              <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or diving into my other passions like football analytics, history, and hands-on projects. I believe in continuous learning and staying updated with the latest trends in backend development and system architecture.</p>
+            </div>
           </div>
 <!--          <div class="col-lg-4 order-1 order-lg-2 mb-4 mb-lg-0">-->
 <!--            <div class="bg-light pt-5">-->
@@ -181,6 +343,91 @@
       </div>
     </div>
 
+
+    <div class="site-section bg-light" id="technologies-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mb-5 position-relative">
+            <h2 class="section-title text-center">Technologies & Skills</h2>
+            <p class="section-subtitle text-center">Tools and technologies I work with</p>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="tech-category">
+              <h4 class="tech-category-title">Languages</h4>
+              <div class="tech-items">
+                <span class="tech-item">Golang</span>
+                <span class="tech-item">JavaScript</span>
+                <span class="tech-item">TypeScript</span>
+                <span class="tech-item">SQL</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4 mb-4">
+            <div class="tech-category">
+              <h4 class="tech-category-title">Frameworks & Libraries</h4>
+              <div class="tech-items">
+                <span class="tech-item">Node.js</span>
+                <span class="tech-item">NestJS</span>
+                <span class="tech-item">Express.js</span>
+                <span class="tech-item">Gin (Go)</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4 mb-4">
+            <div class="tech-category">
+              <h4 class="tech-category-title">Databases</h4>
+              <div class="tech-items">
+                <span class="tech-item">PostgreSQL</span>
+                <span class="tech-item">Redis</span>
+                <span class="tech-item">GraphQL</span>
+                <span class="tech-item">MongoDB</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4 mb-4">
+            <div class="tech-category">
+              <h4 class="tech-category-title">Cloud & DevOps</h4>
+              <div class="tech-items">
+                <span class="tech-item">AWS</span>
+                <span class="tech-item">Google Cloud</span>
+                <span class="tech-item">Docker</span>
+                <span class="tech-item">Kubernetes</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4 mb-4">
+            <div class="tech-category">
+              <h4 class="tech-category-title">Tools & Others</h4>
+              <div class="tech-items">
+                <span class="tech-item">Git</span>
+                <span class="tech-item">GitHub</span>
+                <span class="tech-item">TDD</span>
+                <span class="tech-item">Agile</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4 mb-4">
+            <div class="tech-category">
+              <h4 class="tech-category-title">Specializations</h4>
+              <div class="tech-items">
+                <span class="tech-item">API Design</span>
+                <span class="tech-item">Microservices</span>
+                <span class="tech-item">Performance Optimization</span>
+                <span class="tech-item">System Architecture</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <section class="site-section" id="testimonials-section">
       <div class="container">
@@ -213,64 +460,260 @@
       </div>
     </section>
 
-    <section class="site-section bg-dark"  id="clients-section">
+    <section class="site-section" id="projects-section">
       <div class="container">
         <div class="row">
           <div class="col-12 mb-5 position-relative">
-            <h2 class="section-title text-white">Projects/Clients</h2>
+            <h2 class="section-title text-center">Featured Projects</h2>
+            <p class="section-subtitle text-center">Backend solutions that made a real impact</p>
           </div>
-          <div class="col-6 col-sm-6 col-md-4 col-lg-4 text-center" style="display: flex; justify-content: center; align-items: center;">
-            <a href="https://alignmt.ai" target="_blank">
-            <img src="images/logo_10.jpg" alt="Image" class="img-fluid">
-            </a>
+        </div>
+        
+        <div class="row">
+          <div class="col-lg-6 mb-4">
+            <div class="project-card">
+              <div class="project-header">
+                <h3>mysanta.ai Backend</h3>
+                <span class="project-company">Oxolo</span>
+              </div>
+              <div class="project-body">
+                <p>Pioneered backend development for AI-powered Christmas platform handling 10,000+ concurrent users during peak season.</p>
+                <div class="project-tech">
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">PostgreSQL</span>
+                  <span class="tech-tag">Google Sheets API</span>
+                </div>
+                <div class="project-metrics">
+                  <div class="metric">
+                    <span class="metric-value">10K+</span>
+                    <span class="metric-label">Concurrent Users</span>
+                  </div>
+                  <div class="metric">
+                    <span class="metric-value">Zero</span>
+                    <span class="metric-label">Downtime</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-6 col-sm-6 col-md-4 col-lg-4 text-center">
-            <a href="https://europeanleague.football/" target="_blank" style="display: flex; justify-content: center;">
-            <img src="images/logo_11.png" alt="Image" class="img-fluid">
-            </a>
-          </div>
-          <div class="col-6 col-sm-6 col-md-4 col-lg-4 text-center">
-            <a href="https://www.whow.net/en" target="_blank" style="display: flex; justify-content: center;">
-            <img src="images/logo_12.png" alt="Image" class="img-fluid">
-            </a>
-          </div>
-          <div class="col-6 col-sm-6 col-md-4 col-lg-4 text-center">
-            <a href="https://greymetre.io/" target="_blank" style="display: flex; justify-content: center;">
-            <img src="images/logo_13.jpeg" alt="Image" class="img-fluid">
-            </a>
-          </div>      
-
           
-          <div class="col-6 col-sm-6 col-md-4 col-lg-4 text-center">
-            <a href="https://deepup.ai/" target="_blank" style="display: flex; justify-content: center;">
-            <img src="images/logo_14.png" alt="Image" class="img-fluid">
-            </a>
-          </div> 
-          <div class="col-6 col-sm-6 col-md-4 col-lg-4 text-center">
-            <a href="https://simprosys.com/" target="_blank" style="display: flex; justify-content: center;">
-            <img src="images/logo_15.svg" alt="Image" class="img-fluid">
-            </a>
-          </div> 
+          <div class="col-lg-6 mb-4">
+            <div class="project-card">
+              <div class="project-header">
+                <h3>ELF Football League System</h3>
+                <span class="project-company">Next Edge Sports</span>
+              </div>
+              <div class="project-body">
+                <p>Led team of 3 developers building roster management system crucial for entire ELF season operations.</p>
+                <div class="project-tech">
+                  <span class="tech-tag">NestJS</span>
+                  <span class="tech-tag">PostgreSQL</span>
+                  <span class="tech-tag">Team Leadership</span>
+                </div>
+                <div class="project-metrics">
+                  <div class="metric">
+                    <span class="metric-value">12</span>
+                    <span class="metric-label">Weeks Season</span>
+                  </div>
+                  <div class="metric">
+                    <span class="metric-value">Zero</span>
+                    <span class="metric-label">Downtime</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-6 mb-4">
+            <div class="project-card">
+              <div class="project-header">
+                <h3>Simprosys Migration</h3>
+                <span class="project-company">Simprosys</span>
+              </div>
+              <div class="project-body">
+                <p>Migrated existing PHP solution to handle 20M Shopify requests using Golang, achieving significant performance improvements.</p>
+                <div class="project-tech">
+                  <span class="tech-tag">Golang</span>
+                  <span class="tech-tag">Migration</span>
+                  <span class="tech-tag">Performance</span>
+                </div>
+                <div class="project-metrics">
+                  <div class="metric">
+                    <span class="metric-value">20M+</span>
+                    <span class="metric-label">Requests</span>
+                  </div>
+                  <div class="metric">
+                    <span class="metric-value">47%</span>
+                    <span class="metric-label">Faster Response</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-6 mb-4">
+            <div class="project-card">
+              <div class="project-header">
+                <h3>Authorizer Open Source</h3>
+                <span class="project-company">Open Source</span>
+              </div>
+              <div class="project-body">
+                <p>Created single-click deployment for Authorizer, pivoted from Kubernetes to Railway for cost-effective beta deployment.</p>
+                <div class="project-tech">
+                  <span class="tech-tag">Golang</span>
+                  <span class="tech-tag">Railway</span>
+                  <span class="tech-tag">Open Source</span>
+                </div>
+                <div class="project-metrics">
+                  <div class="metric">
+                    <span class="metric-value">1-Click</span>
+                    <span class="metric-label">Deployment</span>
+                  </div>
+                  <div class="metric">
+                    <span class="metric-value">Cost</span>
+                    <span class="metric-label">Optimized</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row mt-5">
+          <div class="col-12">
+            <h3 class="text-center mb-4">Client Partners</h3>
+            <div class="clients-grid">
+              <div class="client-item">
+                <a href="https://alignmt.ai" target="_blank">
+                  <img src="images/logo_10.jpg" alt="Alignmt AI" class="img-fluid">
+                </a>
+              </div>
+              <div class="client-item">
+                <a href="https://europeanleague.football/" target="_blank">
+                  <img src="images/logo_11.png" alt="ELF Football" class="img-fluid">
+                </a>
+              </div>
+              <div class="client-item">
+                <a href="https://www.whow.net/en" target="_blank">
+                  <img src="images/logo_12.png" alt="WhoW" class="img-fluid">
+                </a>
+              </div>
+              <div class="client-item">
+                <a href="https://greymetre.io/" target="_blank">
+                  <img src="images/logo_13.jpeg" alt="Greymeter" class="img-fluid">
+                </a>
+              </div>
+              <div class="client-item">
+                <a href="https://deepup.ai/" target="_blank">
+                  <img src="images/logo_14.png" alt="DeepUp" class="img-fluid">
+                </a>
+              </div>
+              <div class="client-item">
+                <a href="https://simprosys.com/" target="_blank">
+                  <img src="images/logo_15.svg" alt="Simprosys" class="img-fluid">
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+
+    <div class="site-section bg-dark" id="contact-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mb-5 position-relative">
+            <h2 class="section-title text-white text-center">Let's Work Together</h2>
+            <p class="section-subtitle text-white text-center">Ready to build something amazing? Let's discuss your project</p>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="contact-content">
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="contact-item">
+                    <div class="contact-icon">
+                      <i class="icon-mail_outline"></i>
+                    </div>
+                    <div class="contact-details">
+                      <h4>Email</h4>
+                      <p><a href="mailto:anand.fmwork@gmail.com">anand.fmwork@gmail.com</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                  <div class="contact-item">
+                    <div class="contact-icon">
+                      <i class="icon-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                      <h4>Phone</h4>
+                      <p><a href="tel:+919560632752">+91 9560632752</a></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                  <div class="contact-item">
+                    <div class="contact-icon">
+                      <i class="icon-location_on"></i>
+                    </div>
+                    <div class="contact-details">
+                      <h4>Location</h4>
+                      <p>New Delhi, India</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                  <div class="contact-item">
+                    <div class="contact-icon">
+                      <i class="icon-work"></i>
+                    </div>
+                    <div class="contact-details">
+                      <h4>Availability</h4>
+                      <p>Open to new opportunities</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="text-center mt-5">
+                <a href="mailto:anand.fmwork@gmail.com?subject=Let's%20Discuss%20Your%20Project" class="btn btn-primary btn-lg">Start a Conversation</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="site-section bg-light footer">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <h3 class="footer-title">Let's discuss some ideas.</h3>
-            <p><a href="https://github.com/lemonnn-8/" target="_blank" class="social-circle"><span class="icon-github"></span></a>
-            &nbsp;
-            <a href="https://www.linkedin.com/in/anankr/" target="_blank" class="social-circle"><span class="icon-linkedin"></span></a>
-            &nbsp;
-            <a href="mailto:pani.anand90@gmail.com?Subject=Hello%20there" target="_blank" class="social-circle"><span class="icon-mail_outline"></span></a>
-            &nbsp;
-            <a href="https://t.me/+919560632752" target="_blank" class="social-circle"><span class="icon-telegram"></span></a>
-            &nbsp;
-            <a href="https://wa.me/qr/T7OGH4ZJ2A7DH1" target="_blank" class="social-circle"><span class="icon-whatsapp"></span></a> </p>
+            <h3 class="footer-title">Connect with me</h3>
+            <div class="social-links">
+              <a href="https://github.com/lemonnn-8/" target="_blank" class="social-circle" title="GitHub">
+                <span class="icon-github"></span>
+              </a>
+              <a href="https://www.linkedin.com/in/anankr/" target="_blank" class="social-circle" title="LinkedIn">
+                <span class="icon-linkedin"></span>
+              </a>
+              <a href="mailto:anand.fmwork@gmail.com" target="_blank" class="social-circle" title="Email">
+                <span class="icon-mail_outline"></span>
+              </a>
+              <a href="https://t.me/+919560632752" target="_blank" class="social-circle" title="Telegram">
+                <span class="icon-telegram"></span>
+              </a>
+              <a href="https://wa.me/qr/T7OGH4ZJ2A7DH1" target="_blank" class="social-circle" title="WhatsApp">
+                <span class="icon-whatsapp"></span>
+              </a>
+            </div>
+            <p class="footer-text">© 2024 Anand Kumar Panigrahi. All rights reserved.</p>
           </div>
-          
         </div>
 
 <!--        <div class="row">-->
