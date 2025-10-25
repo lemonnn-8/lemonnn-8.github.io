@@ -1078,7 +1078,7 @@ body:after {
 
 /* About Section */
 .about-section {
-  padding: 100px 0;
+  padding: 64px 0; /* reduced to shorten page length */
   background: #f8f9fa;
 }
 
@@ -1226,7 +1226,7 @@ body:after {
 
 /* Experience Section */
 .experience-section {
-  padding: 100px 0;
+  padding: 64px 0; /* reduced */
   background: white;
 }
 
@@ -1322,7 +1322,7 @@ body:after {
 
 /* Skills Section */
 .skills-section {
-  padding: 100px 0;
+  padding: 64px 0; /* reduced */
   background: #f8f9fa;
 }
 
@@ -1417,7 +1417,7 @@ body:after {
 
 /* Projects Section */
 .projects-section {
-  padding: 100px 0;
+  padding: 64px 0; /* reduced */
   background: white;
 }
 
@@ -1506,6 +1506,10 @@ body:after {
   color: #666;
   line-height: 1.6;
   margin-bottom: 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* clamp to 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .project-tech {
@@ -1525,7 +1529,7 @@ body:after {
 
 /* Contact Section */
 .contact-section {
-  padding: 100px 0;
+  padding: 64px 0; /* reduced */
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
 }
@@ -1621,24 +1625,47 @@ body:after {
 .social-icons {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap; /* allow wrapping to prevent overlap */
+  align-items: center;
 }
 
 .social-icon {
-  width: 50px;
-  height: 50px;
+  width: 44px;
+  height: 44px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   color: white;
   text-decoration: none;
   transition: all 0.3s ease;
+  line-height: 1; /* avoid vertical overflow */
 }
 
 .social-icon:hover {
   background: #4ecdc4;
   transform: translateY(-3px);
+}
+
+/* Normalize icon font sizes inside round icon buttons */
+.social-icon [class^="icon-"],
+.social-icon [class*=" icon-"] {
+  font-size: 20px !important; /* enforce uniform size */
+  line-height: 1;
+}
+
+/* Ensure contact icons use consistent sizing */
+.contact-icon [class^="icon-"],
+.contact-icon [class*=" icon-"] {
+  font-size: 20px !important;
+  line-height: 1;
+}
+
+/* Prevent oversized font icons from inheriting large sizes globally */
+.contact-section [class^="icon-"],
+.contact-section [class*=" icon-"] {
+  font-size: 1em; /* base size; containers control visual size */
 }
 
 /* Footer */
@@ -1656,7 +1683,7 @@ body:after {
 
 /* Testimonials Section */
 .testimonials-section {
-  padding: 100px 0;
+  padding: 64px 0; /* reduced */
   background: white;
 }
 
@@ -1729,7 +1756,7 @@ body:after {
 
 /* Services Section */
 .services-section {
-  padding: 100px 0;
+  padding: 64px 0; /* reduced */
   background: #f8f9fa;
 }
 
