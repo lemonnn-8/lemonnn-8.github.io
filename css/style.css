@@ -1417,7 +1417,7 @@ body:after {
 
 /* Projects Section */
 .projects-section {
-  padding: 100px 0;
+  padding: 80px 0;
   background: white;
 }
 
@@ -1621,6 +1621,8 @@ body:after {
 .social-icons {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .social-icon {
@@ -1634,6 +1636,11 @@ body:after {
   color: white;
   text-decoration: none;
   transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.social-icon span {
+  font-size: 1.5rem;
 }
 
 .social-icon:hover {
