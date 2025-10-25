@@ -178,6 +178,23 @@ jQuery(document).ready(function($) {
 	};
 	siteCarousel();
 
+	// Typed roles in hero
+	if (window.Typed && document.getElementById('typed-roles')) {
+		var typed = new Typed('#typed-roles', {
+			strings: [
+				'backend systems',
+				'APIs & microservices',
+				'web applications',
+				'iOS & Android apps'
+			],
+			typeSpeed: 45,
+			backSpeed: 24,
+			backDelay: 1200,
+			loop: true,
+			showCursor: false
+		});
+	}
+
 	var siteStellar = function() {
 		$(window).stellar({
 	    responsive: false,
