@@ -285,6 +285,11 @@ body:after {
       display: inline-block;
       padding: 5px 10px;
       color: #207561 !important; }
+    .site-navbar .site-logo img.logo-img {
+      height: 36px;
+      width: auto;
+      display: block;
+    }
   .site-navbar .site-navigation .site-menu {
     margin: 0;
     padding: 0;
@@ -552,6 +557,9 @@ body:after {
       color: #000; }
     .sticky-wrapper.is-sticky .site-navbar .site-logo a {
       color: #000; }
+    .sticky-wrapper.is-sticky .site-navbar .site-logo img.logo-img {
+      height: 32px;
+    }
     .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a {
       color: #000 !important; }
       .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a:hover, .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a.active {
@@ -1702,6 +1710,23 @@ body:after {
 .site-footer p {
   margin: 0;
   font-size: 0.9rem;
+}
+
+/* Minimal single-page: hide nonessential sections */
+.services-section,
+#about-section,
+.experience-section,
+.skills-section,
+.testimonials-section {
+  display: none !important;
+}
+
+/* Normalize social icon sizes */
+.social-icons .icon-github:before,
+.social-icons .icon-linkedin:before,
+.social-icons .icon-telegram:before,
+.social-icons .icon-whatsapp:before {
+  font-size: 22px !important;
 }
 
 /* Testimonials Section */
