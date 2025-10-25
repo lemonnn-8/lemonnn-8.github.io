@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="canonical" href="https://lemonnn-8.github.io/" />
     
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -33,16 +34,7 @@
           <span class="icon-close2 js-menu-toggle"></span>
         </div>
       </div>
-      <div class="site-mobile-menu-body">
-        <ul class="site-nav-wrap">
-          <li><a href="#about-section" class="nav-link">About</a></li>
-          <li><a href="#experience-section" class="nav-link">Experience</a></li>
-          <li><a href="#skills-section" class="nav-link">Skills</a></li>
-          <li><a href="#projects-section" class="nav-link">Projects</a></li>
-          <li><a href="#testimonials-section" class="nav-link">Testimonials</a></li>
-          <li><a href="#contact-section" class="nav-link">Contact</a></li>
-        </ul>
-      </div>
+      <div class="site-mobile-menu-body"></div>
     </div>
    
     <header class="site-navbar py-3 js-sticky-header site-navbar-target" role="banner">
@@ -51,7 +43,9 @@
           
           <div class="col-auto">
             <div class="site-logo">
-              <a href="#home-section" class="logo-text">AKP</a>
+              <a href="https://lemonnn-8.github.io/" class="logo-text" aria-label="Home">
+                <img src="images/logo_15.svg" alt="Anand Kumar Panigrahi" class="logo-img" />
+              </a>
             </div>
           </div>
 
@@ -59,10 +53,7 @@
             <nav class="site-navigation" role="navigation">
               <ul class="site-menu main-menu js-clone-nav d-flex align-items-center">
                 <li><a href="#about-section" class="nav-link">About</a></li>
-                <li><a href="#experience-section" class="nav-link">Experience</a></li>
-                <li><a href="#skills-section" class="nav-link">Skills</a></li>
                 <li><a href="#projects-section" class="nav-link">Projects</a></li>
-                <li><a href="#testimonials-section" class="nav-link">Testimonials</a></li>
                 <li><a href="#contact-section" class="nav-link">Contact</a></li>
               </ul>
             </nav>
@@ -152,113 +143,7 @@
     
 
     
-    <div class="site-section services-section" id="services-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="section-title text-center">Services I Offer</h2>
-            <p class="services-subtitle text-center">Comprehensive backend solutions to power your applications</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="service-card" data-aos="fade-up">
-              <div class="service-icon">
-                <span class="icon-code"></span>
-              </div>
-              <h3>API Development</h3>
-              <p>Design and build robust RESTful APIs and GraphQL endpoints using Go, Node.js, and modern frameworks. Focus on performance, scalability, and developer experience.</p>
-              <ul class="service-features">
-                <li>RESTful API Design</li>
-                <li>GraphQL Implementation</li>
-                <li>API Documentation</li>
-                <li>Rate Limiting & Security</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-              <div class="service-icon">
-                <span class="icon-cloud"></span>
-              </div>
-              <h3>Microservices Architecture</h3>
-              <p>Design and implement scalable microservices architectures that can handle millions of requests. Containerization with Docker and orchestration with Kubernetes.</p>
-              <ul class="service-features">
-                <li>Service Decomposition</li>
-                <li>Container Orchestration</li>
-                <li>Service Communication</li>
-                <li>Load Balancing</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-              <div class="service-icon">
-                <span class="icon-database"></span>
-              </div>
-              <h3>Database Design & Optimization</h3>
-              <p>Design efficient database schemas and optimize queries for maximum performance. Experience with PostgreSQL, Redis, and other modern databases.</p>
-              <ul class="service-features">
-                <li>Database Schema Design</li>
-                <li>Query Optimization</li>
-                <li>Data Migration</li>
-                <li>Caching Strategies</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-              <div class="service-icon">
-                <span class="icon-security"></span>
-              </div>
-              <h3>System Security & Performance</h3>
-              <p>Implement security best practices and optimize system performance. From authentication systems to performance monitoring and optimization.</p>
-              <ul class="service-features">
-                <li>Authentication & Authorization</li>
-                <li>Performance Optimization</li>
-                <li>Security Auditing</li>
-                <li>Monitoring & Logging</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="service-card" data-aos="fade-up" data-aos-delay="400">
-              <div class="service-icon">
-                <span class="icon-cloud_download"></span>
-              </div>
-              <h3>Cloud Infrastructure</h3>
-              <p>Deploy and manage applications on cloud platforms like AWS and Google Cloud. Set up CI/CD pipelines and monitoring systems.</p>
-              <ul class="service-features">
-                <li>AWS & Google Cloud</li>
-                <li>CI/CD Pipelines</li>
-                <li>Infrastructure as Code</li>
-                <li>Auto-scaling</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="service-card" data-aos="fade-up" data-aos-delay="500">
-              <div class="service-icon">
-                <span class="icon-users"></span>
-              </div>
-              <h3>Technical Leadership</h3>
-              <p>Lead development teams and mentor junior developers. Code reviews, architecture decisions, and technical strategy planning.</p>
-              <ul class="service-features">
-                <li>Team Leadership</li>
-                <li>Code Reviews</li>
-                <li>Technical Mentoring</li>
-                <li>Architecture Planning</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    
 
     <div class="site-section" id="about-section">
       <div class="container">
@@ -348,237 +233,11 @@
       </div>
     </div>
 
-    <div class="site-section experience-section" id="experience-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="section-title text-center">Professional Experience</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <div class="timeline">
-              <div class="timeline-item" data-aos="fade-up">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                  <div class="timeline-header">
-                    <h3>Software Engineer</h3>
-                    <span class="company">DeepUp GmbH</span>
-                    <span class="duration">Nov 2024 – Present</span>
-                  </div>
-                  <p class="timeline-description">
-                    Building backend services in Go, migrating existing Kotlin services for improved performance and maintainability. Managing Kubernetes deployments with canary strategies to ensure safe and incremental rollouts.
-                  </p>
-                  <ul class="timeline-achievements">
-                    <li>Collaborate with customers and product teams to design and deliver solutions using TDD</li>
-                    <li>Manage Kubernetes deployments with canary strategies</li>
-                    <li>Migrate existing Kotlin services to Go for better performance</li>
-                  </ul>
-                </div>
-              </div>
+    
 
-              <div class="timeline-item" data-aos="fade-up">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                  <div class="timeline-header">
-                    <h3>Sr. Software Engineer</h3>
-                    <span class="company">Scaletech Solutions</span>
-                    <span class="duration">Sept 2020 – Nov 2024</span>
-                  </div>
-                  <p class="timeline-description">
-                    Led multiple high-impact projects including soccer platform development, AI-powered analytics platform, and roster management system for ELF Football League.
-                  </p>
-                  <ul class="timeline-achievements">
-                    <li>Spearheaded development of soccer platform at Next Edge Sports using NestJS and PostgreSQL</li>
-                    <li>Built mysanta.ai backend handling 10,000+ concurrent users during Christmas</li>
-                    <li>Led team of 3 developers for ELF Football League roster management with zero downtime</li>
-                    <li>Optimized code reducing per request time from 1500ms to 800ms for 20M Shopify requests</li>
-                  </ul>
-                </div>
-              </div>
+    
 
-              <div class="timeline-item" data-aos="fade-up">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                  <div class="timeline-header">
-                    <h3>Sr. Consultant</h3>
-                    <span class="company">Greymeter Pvt. Ltd.</span>
-                    <span class="duration">Mar 2022 – May 2023</span>
-                  </div>
-                  <p class="timeline-description">
-                    Engineered a cutting-edge compliance automation tool for manufacturing firms, utilizing NestJS and PostgreSQL with automated compliance triggering based on frequency.
-                  </p>
-                  <ul class="timeline-achievements">
-                    <li>Single-handedly designed and developed the entire system</li>
-                    <li>Collaborated with stakeholders to ensure alignment with requirements</li>
-                    <li>Implemented automated compliance triggering system</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="site-section skills-section" id="skills-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="section-title text-center">Technical Skills</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="skills-category" data-aos="fade-right">
-              <h3>Programming Languages</h3>
-              <div class="skill-items">
-                <div class="skill-item">
-                  <div class="skill-name">Go</div>
-                  <div class="skill-bar">
-                    <div class="skill-progress" data-width="95"></div>
-                  </div>
-                </div>
-                <div class="skill-item">
-                  <div class="skill-name">JavaScript</div>
-                  <div class="skill-bar">
-                    <div class="skill-progress" data-width="90"></div>
-                  </div>
-                </div>
-                <div class="skill-item">
-                  <div class="skill-name">TypeScript</div>
-                  <div class="skill-bar">
-                    <div class="skill-progress" data-width="90"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="skills-category" data-aos="fade-left">
-              <h3>Frameworks & Technologies</h3>
-              <div class="skill-items">
-                <div class="skill-item">
-                  <div class="skill-name">Node.js</div>
-                  <div class="skill-bar">
-                    <div class="skill-progress" data-width="95"></div>
-                  </div>
-                </div>
-                <div class="skill-item">
-                  <div class="skill-name">NestJS</div>
-                  <div class="skill-bar">
-                    <div class="skill-progress" data-width="90"></div>
-                  </div>
-                </div>
-                <div class="skill-item">
-                  <div class="skill-name">GraphQL</div>
-                  <div class="skill-bar">
-                    <div class="skill-progress" data-width="85"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col-lg-4">
-            <div class="skill-card" data-aos="fade-up">
-              <div class="skill-icon">
-                <span class="icon-cloud"></span>
-              </div>
-              <h4>Cloud & DevOps</h4>
-              <ul class="skill-list">
-                <li>AWS</li>
-                <li>Google Cloud</li>
-                <li>Kubernetes</li>
-                <li>Docker</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
-              <div class="skill-icon">
-                <span class="icon-database"></span>
-              </div>
-              <h4>Databases</h4>
-              <ul class="skill-list">
-                <li>PostgreSQL</li>
-                <li>Redis</li>
-                <li>MongoDB</li>
-                <li>MySQL</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
-              <div class="skill-icon">
-                <span class="icon-code"></span>
-              </div>
-              <h4>Tools & Others</h4>
-              <ul class="skill-list">
-                <li>Git & GitHub</li>
-                <li>REST APIs</li>
-                <li>Microservices</li>
-                <li>TDD</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="site-section testimonials-section" id="testimonials-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="section-title text-center">What Clients Say</h2>
-            <p class="testimonials-subtitle text-center">Hear from colleagues and clients about working with me</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <div class="owl-carousel slide-one-item">
-              <div class="slide">
-                <div class="testimonial-card">
-                  <div class="testimonial-content">
-                    <div class="quote-icon">
-                      <span class="icon-quote-left"></span>
-                    </div>
-                    <blockquote>
-                      <p>I had the pleasure of working closely with Anand as they served as our Project Manager and Lead Backend Developer. Their exceptional skills in project management ensured that our team stayed on track and delivered high-quality results within deadlines. As a backend developer, Anand worked on Nest JS and Postgres SQL and showcased a deep understanding of the coding language and frameworks, consistently delivering robust and efficient solutions. Their leadership, technical expertise, and dedication make them an invaluable asset to any team. I highly recommend Anand for any project management or backend development role.</p>
-                    </blockquote>
-                    <div class="testimonial-author">
-                      <div class="author-info">
-                        <h4>Asit Srivastava</h4>
-                        <p>Director, GreyMeter Consultants Pvt. Ltd.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="testimonial-card">
-                  <div class="testimonial-content">
-                    <div class="quote-icon">
-                      <span class="icon-quote-left"></span>
-                    </div>
-                    <blockquote>
-                      <p>I have had the pleasure of mentoring Anand in Golang, and I can confidently say that he is one of the most dedicated and passionate professionals I have worked with. His eagerness to learn, strong problem-solving skills, and ability to quickly grasp complex concepts make him an exceptional learner and contributor.</p>
-                    </blockquote>
-                    <div class="testimonial-author">
-                      <div class="author-info">
-                        <h4>Vipul Hirani</h4>
-                        <p>Founder, DaYours</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    
 
     <div class="site-section projects-section" id="projects-section">
       <div class="container">

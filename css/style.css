@@ -285,6 +285,11 @@ body:after {
       display: inline-block;
       padding: 5px 10px;
       color: #207561 !important; }
+  .site-navbar .site-logo .logo-img {
+    display: block;
+    height: 36px;
+    width: auto;
+  }
   .site-navbar .site-navigation .site-menu {
     margin: 0;
     padding: 0;
@@ -539,6 +544,9 @@ body:after {
     color: #000; }
   .sticky-wrapper .site-navbar .site-logo a {
     color: #000; }
+  .sticky-wrapper .site-navbar .site-logo .logo-img {
+    height: 32px;
+  }
   .sticky-wrapper .site-navbar .site-menu > li > a {
     color: rgba(0, 0, 0, 0.7) !important; }
     .sticky-wrapper .site-navbar .site-menu > li > a:hover, .sticky-wrapper .site-navbar .site-menu > li > a.active {
