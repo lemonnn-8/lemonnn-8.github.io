@@ -590,16 +590,25 @@ body:after {
     z-index: 2; }
   .site-blocks-cover h1 {
     font-size: 3rem;
-    font-family: "Arbutus Slab", serif; }
+    font-family: "Arbutus Slab", serif;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px; }
+    @media (max-width: 768px) {
+      .site-blocks-cover h1 {
+        font-size: 2.2rem; } }
   .site-blocks-cover .img-face {
     position: absolute;
     right: -5%;
     bottom: 0;
     z-index: 1;
-    max-width: 950px; }
+    max-width: 950px;
+    border-radius: 8px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.2); }
     @media (max-width: 991.98px) {
       .site-blocks-cover .img-face {
-        right: -25%; } }
+        right: -25%;
+        max-width: 600px; } }
 
 .section-title {
   position: relative;
@@ -856,11 +865,223 @@ body:after {
 .footer {
   font-size: .9rem; }
   .footer .footer-title {
-    font-size: 1.1rem;
-    margin-bottom: 30px; }
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 600; }
   .footer ul li {
     margin-bottom: 10px; }
   .footer a {
     color: #888888; }
     .footer a:hover {
       color: #000; }
+
+/* Custom Experience Timeline Styles */
+.experience-item {
+  position: relative;
+  transition: all 0.3s ease; }
+  .experience-item:hover {
+    transform: translateY(-2px); }
+  .experience-item h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 5px; }
+  .experience-item h5 {
+    font-size: 1.1rem; }
+  .experience-item ul {
+    list-style: none;
+    padding-left: 0; }
+    .experience-item ul li {
+      position: relative;
+      padding-left: 25px;
+      margin-bottom: 12px;
+      line-height: 1.6; }
+      .experience-item ul li:before {
+        content: "▹";
+        position: absolute;
+        left: 0;
+        color: #207561;
+        font-size: 1.2rem;
+        font-weight: bold; }
+
+/* Skills Section Styles */
+.skill-category {
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+  .skill-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
+  .skill-category h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000; }
+
+.skill-tags .badge {
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 8px 15px !important;
+  border-radius: 20px;
+  background: #207561 !important;
+  transition: all 0.3s ease; }
+  .skill-tags .badge:hover {
+    background: #000 !important;
+    transform: scale(1.05); }
+
+/* Enhanced Social Circle */
+.social-circle {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  background: #f8f9fa;
+  color: #000;
+  transition: all 0.3s ease;
+  margin: 0 5px; }
+  .social-circle:hover {
+    background: #207561;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(32,117,97,0.3); }
+
+/* Enhanced Lead Text */
+.lead {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #333; }
+
+/* Text Muted Enhancement */
+.text-muted {
+  color: #6c757d !important; }
+
+/* Border Enhancement */
+.border-bottom {
+  border-bottom: 1px solid #e9ecef !important; }
+
+/* Icon Enhancements */
+.icon-check {
+  color: #207561; }
+
+/* Custom Background Colors */
+.bg-light {
+  background-color: #f8f9fa !important; }
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  .experience-item h3 {
+    font-size: 1.3rem; }
+  .experience-item h5 {
+    font-size: 1rem; }
+  .skill-category h4 {
+    font-size: 1.1rem; }
+  .footer .footer-title {
+    font-size: 1.5rem; }
+}
+
+/* Smooth Scroll Enhancement */
+html {
+  scroll-behavior: smooth; }
+
+/* Card-like Service Boxes */
+.service {
+  border-radius: 8px;
+  transition: all 0.3s ease; }
+  .service:hover {
+    box-shadow: 0 12px 35px -5px rgba(0,0,0,0.15) !important; }
+
+/* Professional Color Scheme */
+.text-primary {
+  color: #207561 !important; }
+
+/* Enhanced Section Padding */
+@media (min-width: 768px) {
+  .site-section {
+    padding: 5em 0; }
+}
+
+/* Client Logo Styles */
+#clients-section .col-6,
+#clients-section .col-sm-6,
+#clients-section .col-md-4,
+#clients-section .col-lg-4 {
+  margin-bottom: 30px;
+  transition: all 0.3s ease; }
+
+#clients-section a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  min-height: 120px; }
+  #clients-section a:hover {
+    background: rgba(255,255,255,0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+
+#clients-section img {
+  max-width: 150px;
+  max-height: 80px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  opacity: 0.8;
+  transition: all 0.3s ease; }
+  #clients-section a:hover img {
+    opacity: 1;
+    transform: scale(1.1); }
+
+/* Heading Enhancement */
+h1, h2, h3 {
+  font-weight: 600; }
+
+h2.section-title {
+  font-size: 2.5rem;
+  font-weight: 700; }
+  @media (max-width: 768px) {
+    h2.section-title {
+      font-size: 2rem; }
+  }
+
+/* Button Enhancements */
+.btn-primary {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: none;
+  box-shadow: 0 4px 15px rgba(32,117,97,0.2);
+  transition: all 0.3s ease; }
+  .btn-primary:hover {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    transform: translateY(-2px); }
+
+/* Testimonial Enhancements */
+#testimonials-section blockquote {
+  border-left: 4px solid #207561;
+  padding-left: 30px;
+  font-style: normal; }
+
+#testimonials-section cite {
+  font-weight: 600;
+  color: #000 !important; }
+
+/* Animation on Scroll */
+[data-aos="fade"] {
+  transition-property: opacity, transform;
+  transition-duration: 1s; }
+
+/* Professional spacing */
+.mb-4 {
+  margin-bottom: 2rem !important; }
+
+.mb-5 {
+  margin-bottom: 3rem !important; }
+
+/* Icon size consistency */
+.icon-location_on,
+.icon-phone,
+.icon-mail_outline {
+  font-size: 1.2rem;
+  vertical-align: middle; }
