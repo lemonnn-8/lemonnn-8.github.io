@@ -104,7 +104,7 @@ body:after {
   padding: 2.5em 0; }
   @media (min-width: 768px) {
     .site-section {
-      /*padding: 7em 0; */ } }
+      padding: 5em 0; } }
   .site-section.site-section-sm {
     padding: 4em 0; }
 
@@ -871,6 +871,42 @@ body:after {
 
 /* Modern Portfolio Styles */
 
+/* Icon spacing and positioning fixes */
+[class^="icon-"], [class*=" icon-"] {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  text-align: center;
+}
+
+/* Ensure proper spacing for all icon containers */
+.service-icon,
+.highlight-icon,
+.skill-icon,
+.quote-icon,
+.contact-icon,
+.social-icon,
+.project-link {
+  position: relative;
+  overflow: hidden;
+}
+
+.service-icon span,
+.highlight-icon span,
+.skill-icon span,
+.quote-icon span,
+.contact-icon span,
+.social-icon span,
+.project-link span {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 1;
+  text-align: center;
+}
+
 /* Hero Section */
 .hero-section {
   min-height: 100vh;
@@ -1078,7 +1114,7 @@ body:after {
 
 /* About Section */
 .about-section {
-  padding: 100px 0;
+  padding: 80px 0;
   background: #f8f9fa;
 }
 
@@ -1122,11 +1158,15 @@ body:after {
   justify-content: center;
   margin-right: 1rem;
   flex-shrink: 0;
+  position: relative;
+  z-index: 1;
 }
 
 .highlight-icon span {
   color: white;
   font-size: 1.5rem;
+  display: block;
+  line-height: 1;
 }
 
 .highlight-content h4 {
@@ -1226,7 +1266,7 @@ body:after {
 
 /* Experience Section */
 .experience-section {
-  padding: 100px 0;
+  padding: 80px 0;
   background: white;
 }
 
@@ -1322,7 +1362,7 @@ body:after {
 
 /* Skills Section */
 .skills-section {
-  padding: 100px 0;
+  padding: 80px 0;
   background: #f8f9fa;
 }
 
@@ -1386,11 +1426,15 @@ body:after {
   align-items: center;
   justify-content: center;
   margin: 0 auto 1rem;
+  position: relative;
+  z-index: 1;
 }
 
 .skill-icon span {
   color: white;
   font-size: 1.5rem;
+  display: block;
+  line-height: 1;
 }
 
 .skill-card h4 {
@@ -1417,8 +1461,12 @@ body:after {
 
 /* Projects Section */
 .projects-section {
-  padding: 100px 0;
+  padding: 80px 0;
   background: white;
+}
+
+.projects-section .row {
+  margin-bottom: 2rem;
 }
 
 .project-card {
@@ -1428,6 +1476,7 @@ body:after {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   height: 100%;
+  margin-bottom: 2rem;
 }
 
 .project-card:hover {
@@ -1437,7 +1486,7 @@ body:after {
 
 .project-image {
   position: relative;
-  height: 200px;
+  height: 180px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   display: flex;
   align-items: center;
@@ -1493,7 +1542,7 @@ body:after {
 }
 
 .project-content {
-  padding: 1.5rem;
+  padding: 1.25rem;
 }
 
 .project-content h3 {
@@ -1504,8 +1553,9 @@ body:after {
 
 .project-content p {
   color: #666;
-  line-height: 1.6;
+  line-height: 1.5;
   margin-bottom: 1rem;
+  font-size: 0.95rem;
 }
 
 .project-tech {
@@ -1525,7 +1575,7 @@ body:after {
 
 /* Contact Section */
 .contact-section {
-  padding: 100px 0;
+  padding: 80px 0;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
 }
@@ -1656,7 +1706,7 @@ body:after {
 
 /* Testimonials Section */
 .testimonials-section {
-  padding: 100px 0;
+  padding: 80px 0;
   background: white;
 }
 
@@ -1688,11 +1738,15 @@ body:after {
   align-items: center;
   justify-content: center;
   margin: 0 auto 2rem;
+  position: relative;
+  z-index: 1;
 }
 
 .quote-icon span {
   color: white;
   font-size: 1.5rem;
+  display: block;
+  line-height: 1;
 }
 
 .testimonial-card blockquote {
@@ -1729,7 +1783,7 @@ body:after {
 
 /* Services Section */
 .services-section {
-  padding: 100px 0;
+  padding: 80px 0;
   background: #f8f9fa;
 }
 
@@ -1741,13 +1795,14 @@ body:after {
 
 .service-card {
   background: white;
-  padding: 2.5rem;
+  padding: 2rem;
   border-radius: 16px;
   text-align: center;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
   height: 100%;
   border: 1px solid #f0f0f0;
+  margin-bottom: 2rem;
 }
 
 .service-card:hover {
@@ -1766,6 +1821,8 @@ body:after {
   justify-content: center;
   margin: 0 auto 1.5rem;
   transition: transform 0.3s ease;
+  position: relative;
+  z-index: 1;
 }
 
 .service-card:hover .service-icon {
@@ -1775,6 +1832,8 @@ body:after {
 .service-icon span {
   color: white;
   font-size: 2rem;
+  display: block;
+  line-height: 1;
 }
 
 .service-card h3 {
@@ -1786,8 +1845,9 @@ body:after {
 
 .service-card p {
   color: #666;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  font-size: 0.95rem;
 }
 
 .service-features {
@@ -1866,6 +1926,18 @@ body:after {
     margin-right: 0;
     margin-bottom: 1rem;
   }
+  
+  .service-card,
+  .project-card {
+    margin-bottom: 1.5rem;
+  }
+  
+  .service-icon,
+  .skill-icon,
+  .highlight-icon,
+  .quote-icon {
+    margin-bottom: 1rem;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1887,5 +1959,63 @@ body:after {
   .btn {
     width: 100%;
     max-width: 250px;
+  }
+  
+  .service-card,
+  .project-card {
+    margin-bottom: 1rem;
+  }
+  
+  .service-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+  }
+  
+  .service-icon span {
+    font-size: 1.5rem;
+  }
+  
+  .skill-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .skill-icon span {
+    font-size: 1.25rem;
+  }
+  
+  .highlight-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .highlight-icon span {
+    font-size: 1.25rem;
+  }
+  
+  .quote-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .quote-icon span {
+    font-size: 1.25rem;
+  }
+  
+  .project-image {
+    height: 150px;
+  }
+  
+  .project-content {
+    padding: 1rem;
+  }
+  
+  .project-content h3 {
+    font-size: 1.1rem;
+  }
+  
+  .project-content p {
+    font-size: 0.9rem;
   }
 }
