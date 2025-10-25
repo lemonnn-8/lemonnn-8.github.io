@@ -1417,7 +1417,7 @@ body:after {
 
 /* Projects Section */
 .projects-section {
-  padding: 100px 0;
+  padding: 80px 0;
   background: white;
 }
 
@@ -1523,6 +1523,23 @@ body:after {
   font-weight: 500;
 }
 
+/* Project Toggle Buttons */
+#showMoreProjects,
+#showLessProjects {
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#showMoreProjects:hover,
+#showLessProjects:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
 /* Contact Section */
 .contact-section {
   padding: 100px 0;
@@ -1620,12 +1637,14 @@ body:after {
 
 .social-icons {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .social-icon {
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   display: flex;
@@ -1634,6 +1653,7 @@ body:after {
   color: white;
   text-decoration: none;
   transition: all 0.3s ease;
+  margin: 0.25rem;
 }
 
 .social-icon:hover {
@@ -1866,6 +1886,17 @@ body:after {
     margin-right: 0;
     margin-bottom: 1rem;
   }
+  
+  .social-icons {
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .social-icon {
+    width: 45px;
+    height: 45px;
+    margin: 0.2rem;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1887,5 +1918,13 @@ body:after {
   .btn {
     width: 100%;
     max-width: 250px;
+  }
+  
+  .projects-section {
+    padding: 60px 0;
+  }
+  
+  .project-card {
+    margin-bottom: 2rem;
   }
 }

@@ -345,4 +345,25 @@ jQuery(document).ready(function($) {
   // Start typing animation
   typeWriter();
 
+  // Show/Hide Projects functionality
+  $('#showMoreProjects').on('click', function() {
+    $('.additional-projects').fadeIn(500);
+    $(this).hide();
+    $('#showLessProjects').show();
+    
+    // Re-initialize AOS for newly shown elements
+    AOS.refresh();
+  });
+
+  $('#showLessProjects').on('click', function() {
+    $('.additional-projects').fadeOut(500);
+    $(this).hide();
+    $('#showMoreProjects').show();
+    
+    // Smooth scroll to projects section
+    $('html, body').animate({
+      scrollTop: $('#projects-section').offset().top - 100
+    }, 500);
+  });
+
 });
