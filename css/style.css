@@ -6,7 +6,8 @@ body {
   line-height: 1.7;
   color: #666666;
   font-weight: 400;
-  font-size: 1rem; }
+  font-size: 1rem;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
 ::-moz-selection {
   background: #000;
@@ -25,7 +26,7 @@ a {
 
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
-  font-family: "Arbutus Slab", serif;
+  font-family: "Playfair Display", serif;
   color: #000; }
 
 .border-2 {
@@ -80,6 +81,8 @@ body:after {
       background: #666666;
       color: #fff; }
 
+.cta-group .btn { margin-right: 10px; margin-bottom: 10px; }
+
 .line-height-1 {
   line-height: 1 !important; }
 
@@ -89,7 +92,7 @@ body:after {
 .form-control {
   height: 43px;
   border-radius: 30px;
-  font-family: "Arbutus Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
   .form-control:active, .form-control:focus {
     border-color: #207561; }
   .form-control:hover, .form-control:active, .form-control:focus {
@@ -285,7 +288,8 @@ body:after {
     margin: 0;
     padding: 0;
     margin-bottom: 0;
-    font-family: "Arbutus Slab", serif; }
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 600; }
     .site-navbar .site-navigation .site-menu a {
       text-decoration: none !important;
       display: inline-block;
@@ -565,7 +569,7 @@ body:after {
   overflow: hidden;
   position: relative; }
   .site-blocks-cover .lead {
-    font-family: "Arbutus Slab", serif;
+    font-family: "Playfair Display", serif;
     font-size: 1.3rem;
     color: #1a1a1a; }
   .site-blocks-cover.overlay {
@@ -589,8 +593,8 @@ body:after {
     position: relative;
     z-index: 2; }
   .site-blocks-cover h1 {
-    font-size: 3rem;
-    font-family: "Arbutus Slab", serif; }
+    font-size: 3.25rem;
+    font-family: "Playfair Display", serif; }
   .site-blocks-cover .img-face {
     position: absolute;
     right: -5%;
@@ -619,6 +623,53 @@ body:after {
     transform: translateX(-50%); }
   .section-title.text-center:after {
     background: #fff; }
+
+/* Elegant Additions */
+.tech-badges { margin: -6px; }
+.tech-badge {
+  display: inline-block;
+  margin: 6px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,0.08);
+  background: #fff;
+  color: #222;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+}
+
+.timeline { list-style: none; padding-left: 0; position: relative; }
+.timeline:before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(0,0,0,0.08);
+}
+.timeline > li { position: relative; padding-left: 36px; margin-bottom: 30px; }
+.timeline > li:before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  background: #207561;
+  border-radius: 50%;
+}
+.timeline h3 { font-size: 1.15rem; margin-bottom: 10px; }
+.timeline .ul-check li { margin-bottom: 8px; }
+
+.project-list { border-top: 1px solid rgba(0,0,0,0.06); }
+.project-item { padding: 18px 0; border-bottom: 1px solid rgba(0,0,0,0.06); }
+.project-item:last-child { border-bottom: none; }
+
+/* Subtle improvements */
+.site-navbar .site-navigation .site-menu > li > a { letter-spacing: 0.01em; }
+.service .service-about p { color: #444; }
+.footer a { letter-spacing: 0.01em; }
 
 .position-relative {
   position: relative; }
