@@ -1189,8 +1189,9 @@ body:after {
 
 .highlight-item {
   display: flex;
-  align-items: flex-start;
-  margin-bottom: 1.5rem;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 1.25rem;
   padding: 1.25rem;
   background: white;
   border-radius: 12px;
@@ -1203,14 +1204,13 @@ body:after {
 }
 
 .highlight-icon {
-  width: 50px;
-  height: 50px;
+  width: 52px;
+  height: 52px;
   background: linear-gradient(45deg, #4ecdc4, #44a08d);
   border-radius: 12px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-right: 1rem;
   flex-shrink: 0;
   position: relative;
   z-index: 1;
@@ -1383,8 +1383,10 @@ body:after {
 
 .duration {
   color: #666;
-  font-size: 0.9rem;
-  float: right;
+  font-size: 0.95rem;
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
 }
 
 .timeline-description {
@@ -1542,7 +1544,7 @@ body:after {
 
 .project-image {
   position: relative;
-  height: 180px;
+  height: 200px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   display: flex;
   align-items: center;
@@ -1568,6 +1570,7 @@ body:after {
   justify-content: center;
   opacity: 0;
   transition: opacity 0.3s ease;
+  pointer-events: none; /* prevent accidental clicks on overlay */
 }
 
 .project-card:hover .project-overlay {
@@ -1590,6 +1593,7 @@ body:after {
   color: #333;
   text-decoration: none;
   transition: transform 0.3s ease;
+  pointer-events: auto; /* allow links to be clickable while overlay is not */
 }
 
 .project-link:hover {
@@ -1667,11 +1671,21 @@ body:after {
   margin-bottom: 2rem;
 }
 
+/* Normalize icon font sizes inside circular buttons */
+.social-icon .icon-github,
+.social-icon .icon-linkedin,
+.social-icon .icon-telegram,
+.social-icon .icon-whatsapp {
+  font-size: 26px;
+  line-height: 1;
+}
+
 .contact-item {
   display: flex;
   align-items: center;
-  margin-bottom: 1.5rem;
-  padding: 1rem;
+  gap: 14px;
+  margin-bottom: 1rem;
+  padding: 1rem 1.25rem;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   transition: background 0.3s ease;
@@ -1682,15 +1696,21 @@ body:after {
 }
 
 .contact-icon {
-  width: 50px;
-  height: 50px;
+  width: 56px;
+  height: 56px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-right: 1rem;
   flex-shrink: 0;
+}
+
+.contact-icon .icon-envelope,
+.contact-icon .icon-phone,
+.contact-icon .icon-map-marker {
+  font-size: 24px;
+  line-height: 1;
 }
 
 .contact-text h4 {
@@ -1726,20 +1746,27 @@ body:after {
 
 .social-icons {
   display: flex;
-  gap: 1rem;
+  align-items: center;
+  gap: 16px;
 }
 
 .social-icon {
-  width: 50px;
-  height: 50px;
-  background: rgba(255, 255, 255, 0.1);
+  width: 56px;
+  height: 56px;
+  background: rgba(255, 255, 255, 0.12);
   border-radius: 50%;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   color: white;
   text-decoration: none;
   transition: all 0.3s ease;
+}
+
+.social-icon [class^="icon-"],
+.social-icon [class*=" icon-"] {
+  font-size: 26px;
+  line-height: 1;
 }
 
 .social-icon:hover {
