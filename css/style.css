@@ -279,12 +279,63 @@ body:after {
   border-bottom: rgba(255, 255, 255, 0.7); }
   .site-navbar:hover {
     background: #fff; }
-  .site-navbar .site-logo {
-    font-size: 1.5rem; }
-    .site-navbar .site-logo a {
-      display: inline-block;
-      padding: 5px 10px;
-      color: #207561 !important; }
+/* Elegant Brand Styles */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-mark {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #4ecdc4, #44a08d);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.brand-name {
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+.sticky-wrapper .brand-name,
+.sticky-wrapper.is-sticky .brand-name {
+  color: #000;
+}
+
+.site-navbar:hover .brand-name {
+  color: #000;
+}
+
+/* Reduce overall padding to cut scroll */
+.site-section {
+  padding: 60px 0;
+}
+
+@media (min-width: 768px) {
+  .site-section { padding: 80px 0; }
+}
+
+.about-section,
+.experience-section,
+.projects-section,
+.contact-section { padding: 60px 0; }
+
+.hero-section { min-height: 85vh; }
+
+.site-navbar .site-logo {
+  font-size: 1.5rem; }
+  .site-navbar .site-logo a {
+    display: inline-block;
+    padding: 0;
+    color: inherit !important; }
   .site-navbar .site-navigation .site-menu {
     margin: 0;
     padding: 0;
@@ -538,7 +589,7 @@ body:after {
   .sticky-wrapper .site-navbar .site-menu-toggle {
     color: #000; }
   .sticky-wrapper .site-navbar .site-logo a {
-    color: #000; }
+  color: #000; }
   .sticky-wrapper .site-navbar .site-menu > li > a {
     color: rgba(0, 0, 0, 0.7) !important; }
     .sticky-wrapper .site-navbar .site-menu > li > a:hover, .sticky-wrapper .site-navbar .site-menu > li > a.active {
@@ -1635,6 +1686,29 @@ body:after {
   justify-content: center;
   margin-right: 1rem;
   flex-shrink: 0;
+}
+
+/* Contact section icon/logo refinement */
+.contact-icon span {
+  display: inline-block;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-contact .contact-item {
+  padding: 0.25rem 0;
+  background: transparent;
+  border-radius: 0;
+}
+
+.profile-contact .contact-item .icon-envelope,
+.profile-contact .contact-item .icon-phone {
+  font-size: 1rem;
 }
 
 .contact-text h4 {
