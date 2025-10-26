@@ -292,8 +292,7 @@ body:after {
 /* Logo Styling */
 .logo-text {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   text-decoration: none !important;
   color: #333 !important;
   font-weight: 700;
@@ -308,15 +307,6 @@ body:after {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   letter-spacing: -0.5px;
-}
-
-.logo-sub {
-  font-size: 0.7rem;
-  color: #666;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-top: -2px;
 }
 
 .site-navbar:hover .logo-text {
@@ -1189,13 +1179,14 @@ body:after {
 
 .highlight-item {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 1.5rem;
   padding: 1.25rem;
   background: white;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease;
+  gap: 1rem;
 }
 
 .highlight-item:hover {
@@ -1210,7 +1201,6 @@ body:after {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 1rem;
   flex-shrink: 0;
   position: relative;
   z-index: 1;
@@ -1219,8 +1209,12 @@ body:after {
 .highlight-icon span {
   color: white;
   font-size: 1.5rem;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   line-height: 1;
+  width: 100%;
+  height: 100%;
 }
 
 .highlight-content h4 {
@@ -1367,12 +1361,25 @@ body:after {
 
 .timeline-header {
   margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .timeline-header h3 {
   margin: 0 0 0.5rem 0;
   color: #333;
   font-weight: 700;
+  flex: 1;
+  min-width: 200px;
+}
+
+.timeline-header .header-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 
 .company {
@@ -1384,7 +1391,8 @@ body:after {
 .duration {
   color: #666;
   font-size: 0.9rem;
-  float: right;
+  text-align: right;
+  white-space: nowrap;
 }
 
 .timeline-description {
@@ -1590,6 +1598,8 @@ body:after {
   color: #333;
   text-decoration: none;
   transition: transform 0.3s ease;
+  cursor: default;
+  pointer-events: none;
 }
 
 .project-link:hover {
@@ -1675,6 +1685,7 @@ body:after {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   transition: background 0.3s ease;
+  gap: 1rem;
 }
 
 .contact-item:hover {
@@ -1691,6 +1702,17 @@ body:after {
   justify-content: center;
   margin-right: 1rem;
   flex-shrink: 0;
+  position: relative;
+}
+
+.contact-icon span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 1.2rem;
+  color: white;
 }
 
 .contact-text h4 {
@@ -1740,6 +1762,17 @@ body:after {
   color: white;
   text-decoration: none;
   transition: all 0.3s ease;
+  position: relative;
+}
+
+.social-icon span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 1.2rem;
+  color: white;
 }
 
 .social-icon:hover {
