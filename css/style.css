@@ -319,6 +319,11 @@ body:after {
   margin-top: -2px;
 }
 
+/* Keep single-line branding neatly aligned */
+.logo-text .logo-main {
+  display: inline-block;
+}
+
 .site-navbar:hover .logo-text {
   color: #333 !important;
 }
@@ -1196,6 +1201,7 @@ body:after {
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease;
+  gap: 14px;
 }
 
 .highlight-item:hover {
@@ -1210,7 +1216,6 @@ body:after {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 1rem;
   flex-shrink: 0;
   position: relative;
   z-index: 1;
@@ -2074,4 +2079,72 @@ body:after {
   .project-content p {
     font-size: 0.9rem;
   }
+}
+
+/* --- Visual fixes per user feedback --- */
+/* Center and normalize icons and spacing in contact/details */
+.contact-item {
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 1.25rem;
+  padding: 1rem 1.25rem;
+}
+
+.contact-icon {
+  width: 56px;
+  height: 56px;
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-icon > [class^="icon-"],
+.contact-icon > [class*=" icon-"] {
+  font-size: 22px;
+  line-height: 1;
+  display: inline-block;
+}
+
+/* Align role/company/duration in timeline header */
+.timeline-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 12px;
+  align-items: baseline;
+}
+.timeline-header h3 { grid-column: 1 / 2; }
+.timeline-header .company { grid-column: 1 / 2; }
+.duration {
+  grid-column: 2 / 3;
+  justify-self: end;
+  float: none;
+  font-size: 0.95rem;
+}
+
+/* Stabilize project hover and avoid overlay intercepting clicks */
+.project-image, .project-overlay { will-change: transform, opacity; }
+.project-card { transform: translateZ(0); }
+.project-overlay { pointer-events: none; }
+.project-links, .project-link { pointer-events: auto; }
+
+/* Align social icons in Get In Touch */
+.social-icons {
+  gap: 16px;
+  align-items: center;
+}
+.social-icon {
+  width: 56px;
+  height: 56px;
+  background: rgba(255, 255, 255, 0.12);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-icon > [class^="icon-"],
+.social-icon > [class*=" icon-"] {
+  font-size: 22px;
+  line-height: 1;
+  display: inline-block;
 }
