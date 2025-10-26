@@ -276,15 +276,27 @@ body:after {
   position: absolute;
   top: 0;
   width: 100%;
-  border-bottom: rgba(255, 255, 255, 0.7); }
+  border-bottom: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease; }
   .site-navbar:hover {
-    background: #fff; }
+    background: rgba(255, 255, 255, 0.98); }
   .site-navbar .site-logo {
     font-size: 1.5rem; }
     .site-navbar .site-logo a {
       display: inline-block;
-      padding: 5px 10px;
-      color: #207561 !important; }
+      padding: 8px 12px;
+      color: #207561 !important;
+      transition: transform 0.3s ease; }
+    .site-navbar .site-logo a:hover {
+      transform: scale(1.05); }
+    .site-navbar .logo-img {
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+      transition: all 0.3s ease; }
+    .site-navbar .logo-img:hover {
+      filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+      transform: scale(1.02); }
   .site-navbar .site-navigation .site-menu {
     margin: 0;
     padding: 0;
@@ -915,6 +927,12 @@ body:after {
   overflow: hidden;
   display: flex;
   align-items: center;
+  animation: gradientShift 15s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+  0%, 100% { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+  50% { background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%); }
 }
 
 .hero-background {
@@ -1578,6 +1596,20 @@ body:after {
   padding: 80px 0;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="50%" cy="50%"><stop offset="0%" stop-color="%23ffffff" stop-opacity="0.1"/><stop offset="100%" stop-color="%23ffffff" stop-opacity="0"/></radialGradient></defs><circle cx="200" cy="200" r="100" fill="url(%23a)"/><circle cx="800" cy="300" r="150" fill="url(%23a)"/><circle cx="400" cy="700" r="120" fill="url(%23a)"/></svg>');
+  opacity: 0.3;
+  z-index: 1;
 }
 
 .contact-subtitle {
@@ -1592,6 +1624,8 @@ body:after {
   border-radius: 20px;
   padding: 3rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  z-index: 2;
 }
 
 .contact-info h3,
