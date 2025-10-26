@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="50" viewBox="0 0 180 50">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4ecdc4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#44a08d;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Elegant geometric logo mark -->
+  <g transform="translate(10, 10)">
+    <!-- Outer circle -->
+    <circle cx="15" cy="15" r="12" fill="none" stroke="url(#logoGradient)" stroke-width="2"/>
+    <!-- Inner elements -->
+    <path d="M8 15 L15 8 L22 15 L15 22 Z" fill="url(#logoGradient)" opacity="0.8"/>
+    <circle cx="15" cy="15" r="3" fill="#fff"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="45" y="20" font-family="Inter, sans-serif" font-size="18" font-weight="700" fill="#333">
+    Anand Kumar
+  </text>
+  <text x="45" y="35" font-family="Inter, sans-serif" font-size="12" font-weight="400" fill="#666" opacity="0.8">
+    Backend Engineer
+  </text>
+</svg>
